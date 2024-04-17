@@ -1,0 +1,5 @@
+print("Ej3: puntaje repuestas")
+RC=int(input("Cantidad de repuestas correctas (+1) "))
+RI=int(input("Cantidad de repuestas incorrectas (-1) "))
+RB=int(input("Cantidad de repuestas en blaco (0) "))
+print ("el puntaje total es de: ",RC-RI)
