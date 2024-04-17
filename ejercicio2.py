@@ -1,2 +1,6 @@
 print ("Ejercicio2: promedio 3 numeros")
-print
+print ("ingrese 3 numeros")
+N1=float(input("Numero 1:"))
+N2=float(input("Numero 2:"))
+N3=float(input("Numero 3:"))
+print ("El promedio de los tres numeros ingresados es:", (N1+N2+N3)/3)
