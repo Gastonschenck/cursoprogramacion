@@ -1,5 +1,5 @@
 #
-posicion= int(input("Ingrese posicion de llegada"))
+posicion= int(input("Ingrese posicion de llegada: "))
 if posicion==1:
     print("Medalla de oro")
 elif posicion==2:

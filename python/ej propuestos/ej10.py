@@ -4,9 +4,9 @@
 num=0
 while num<=0:
     num= int(input("Ingrese un numero entero: "))
-    if num/2==0:
+if num/2==0:
         print("el numero no es par ni impar")
-    elif num%2==0:
+elif num%2==0:
         print("el numero es par")
-    else:
+else:
         print("el numero es impar")

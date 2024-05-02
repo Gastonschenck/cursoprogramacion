@@ -4,7 +4,7 @@
 #sea 0)
 num= int(input("Ingrese un numero entero: "))
 if num/2==0:
-    print("el numero no es par ni impar")
+    print("el numero es 0")
 elif num%2==0:
     print("el numero es par")
 else:

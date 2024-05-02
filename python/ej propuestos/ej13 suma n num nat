@@ -1,0 +1,8 @@
+#Se pide representar el algoritmo que nos calcule la suma de los N primeros
+#números naturales. N se leerá por teclado (no tenemos por qué llamar a la
+#variable N, podemos llamarla como queramos).
+suma=int (0)
+veces=int(input("ingrese cantidad de numeros a sumar: "))
+for i in range (1,veces+1):
+    suma=suma+i
+print ("la suma de los primeros numeros es: ", suma)
