@@ -1,4 +1,5 @@
 lista=[]
-for i in range (1,4):
-    lista[i]=int(input("ingrese un numero: "))
+for i in range (5):
+    numero=int(input("ingrese un numero: "))
+    lista.append(numero)
 print (lista)

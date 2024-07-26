@@ -1,0 +1,46 @@
+1) Crea un array o arreglo unidimensional con un tamaño de 5, asignale los valores
+numéricos manualmente (los que tu quieras) y muestralos por pantalla.
+2) Modifica el ejercicio anterior para que insertes los valores numéricos
+con leer mediante un bucle y los muestre por pantalla.
+3) Crea un array o arreglo unidimensional con un tamaño de 10, inserta los valores
+numéricos que desees de la manera que quieras y muestra por pantalla la media de
+valores del array.
+4) Crea un array o arreglo unidimensional donde tu le indiques el tamaño por teclado y
+crear una función que rellene el array o arreglo con los múltiplos de un numero pedido
+por teclado. Por ejemplo, si defino un array de tamaño 5 y eligo un 3 en la función, el
+array contendrá 3, 6, 9, 12, 15. Muestralos por pantalla usando otra función distinta.
+5) Crea dos arrays o arreglos unidimensionales que tengan el mismo tamaño (lo
+pedirá por teclado), en uno de ellos almacenaras nombres de personas como
+cadenas, en el otro array o arreglo ira almacenando la longitud de los nombres, para
+ello puedes usar la función LONGITUD(cadena) que viene en PseInt. Muestra por
+pantalla el nombre y la longitud que tiene. Puedes usar funciones si lo deseas.
+6) Haz lo mismo que el ejercicio anterior pero con un arreglo o array multidimensional.
+Ten en cuenta que no podemos tener una columna con cadena y otra con números,
+así que usa la función convertiratexto(numero) que viene en PseInt. Piensa cuantas
+columnas y filas debera tener el array o arreglo, también de que forma deberemos
+recorrer el array o arreglo según lo que nos pide.
+
+7) Crea un arreglo o array multidimensional con un tamaño que nosotros le indiquemos
+por teclado (puede ser 6×4, 7×2, etc.), recorre el array o arreglo e introduce número
+aleatorios (función azar(x) donde x es el limite donde generara), crea una función
+llamada rellenaArray. Por último, muestralos por pantalla tal como quedarían en el
+array o arreglo, es decir, si el array es de 5×5 tendremos que hace que cada 5 números
+baje una línea, por ejemplo:
+5 2 6 8 4
+5 4 3 2 1
+9 8 7 4 2
+9 8 7 5 2
+2 3 5 4 2
+Para escribir sin que salte de linea, usamos Sin Saltar
+8) Crea un arreglo o array multidimanesional que contenga 3 columnas y las filas que tu
+quieras, las dos primeras columnas tendrán números y en la 3 columna sera el resultado
+de sumar el número de la primera y segunda columna. Muestra el array o arreglo de la
+siguiente forma:
+3 + 5 = 8
+4 + 4 = 7
+...
+Piensa de que forma puedes mostrar con un solo bucle.
+9) Crea un arreglo o array multidimensional con un tamaño que definiremos nosotros
+por teclado, contendrá números aleatorios usando la función anterior y crearemos un
+array o arreglo unidimensional donde se copiaran los números que contiene el array
+multidimensional. Piensa que tamaño debe tener el array o arreglo unimensional.
