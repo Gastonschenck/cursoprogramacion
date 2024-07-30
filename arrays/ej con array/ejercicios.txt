@@ -44,3 +44,6 @@ Piensa de que forma puedes mostrar con un solo bucle.
 por teclado, contendrá números aleatorios usando la función anterior y crearemos un
 array o arreglo unidimensional donde se copiaran los números que contiene el array
 multidimensional. Piensa que tamaño debe tener el array o arreglo unimensional.
+10) Crea un array o arreglo multidimensional que contenga la tabla de multiplicar del 1
+al 9 (10 filas y 10 columnas). La primera fila y la columna debe contener estos
+números. Algo así:
