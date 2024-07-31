@@ -1,11 +1,22 @@
+from pynput import keyboard as kb
+
 #def dibujar_calcularora():
 
 def leerDatos ():
+    def leerSigno(signo):
+        cuenta=str(signo)
+        print (cuenta)
     dato1=float(input("Numero: "))
-    cuenta=(input("Operacion: "))
-    dato2=float(input("Numero: "))
+    #lee y comprueba la operacion
+    with kb.Listener(leerSigno) as escuchador:
+        escuchador.join()
     
-    return 5(dato1,dato2,cuenta)
+    
+
+    #cuenta=(input("Operacion: "))
+    
+    dato2=float(input("Numero: "))
+    return (dato1,dato2,cuenta)
 
 
 
