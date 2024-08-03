@@ -47,7 +47,7 @@ def hacerCuenta(num1,num2,operacion):
 
 def calculadora ():
     resultado=0.0
-    numero=0.0
+    numero=1.0
     seguir=True
     while seguir==True:
         numero,op=leerDatos ()
