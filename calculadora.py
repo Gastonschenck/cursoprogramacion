@@ -3,21 +3,30 @@ import keyboard
 #def dibujar_calcularora():
 
 def leerDatos ():
-    cuenta=str
-    def leerSigno(signo):
-        global cuenta
-        if signo==kb.KeyCode.from_char("+") or signo=="-" or signo=="*" or signo=="/" :
-            cuenta=str(signo)
-            #print (cuenta)
-            return False
-            
-        keyboard.write (key.backspace)
+    
+    def leerOp():
+        while True:
+            valor=keyboard.read_key()
+            if valor=="+":
+                signo="+"
+                
+                return signo
+            elif valor=="-":
+                signo="-"
+                #keyboard.write(backspace)
+                return signo
+            elif valor =="*":
+                signo="*"
+                return signo
+            elif valor =="/":
+                signo="/"
+                return signo    
     dato1=float(input("Numero: "))
-    #with kb.Listener(leerSigno) as escuchador:
-    #   escuchador.join()
-    #lee y comprueba la operacion
-    kb.Listener(leerSigno).run()
-       #limpiar=input()
+    #lee teclas de operacion
+    cuenta= leerOp ()
+    #borra tecla presionada
+    keyboard.press("backspace")
+    #limpiar=input()
     #cuenta=(input("Operacion: "))
     dato2=float(input("Numero: "))
     return (dato1,dato2,cuenta)
@@ -28,7 +37,7 @@ def hacerCuenta(num1,num2,operacion):
     if operacion =="+":
         return num1+num2
     elif operacion=="-":
-        return num1+num2
+        return num1-num2
     elif operacion=="*":
         return num1*num2
     elif operacion=="/":
