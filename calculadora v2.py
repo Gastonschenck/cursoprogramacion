@@ -1,25 +1,51 @@
 from pynput import keyboard as kb
+from os import system
 import keyboard
 import time
 #def dibujar_calcularora():
-
+valor=""
+#def dibujar ():
+    
 def leerDatos ():
-    valor=""
+    
     aux=str
     num=0.0
-    while True:
-        valortecla=keyboard.read_key()
-        time.sleep(0.5)
+    def cargarNumero (valortecla): 
+        global valor
         if valortecla=="0":
-            valor += "0"   
-            #keyboard.press("backspace")
-            print (valor)
+            valor += '0'   
         elif valortecla=="1":
             valor += '1'
-            valortecla=""    
-            #keyboard.press("backspace")
-            num=float(valor)
-            print(num)
+        elif valortecla=="2":
+            valor += '2'
+        elif valortecla=="3":
+            valor += '3'
+        elif valortecla=="4":
+            valor += '4'
+        elif valortecla=="5":
+            valor += '5'
+        elif valortecla=="6":
+            valor += '6'
+        elif valortecla=="7":
+            valor += '7'
+        elif valortecla=="8":
+            valor += '8'
+        elif valortecla=="9":
+            valor += '9'
+        
+        valortecla=""    
+        num=float(valor)
+        print(valor,end='\r')
+        return(num)
+    while True:
+        valortecla=keyboard.read_key()
+        
+        
+        #espera un instante
+        time.sleep(0.1)
+        if valortecla=="0" or valortecla=="1" or valortecla=="2" or valortecla=="3" or valortecla=="4" or valortecla=="5" or valortecla=="6" or valortecla=="7" or valortecla=="8" or valortecla=="9":
+         num=cargarNumero(valortecla)
+        
             
         
         
@@ -59,4 +85,3 @@ def calculadora ():
         print (resultado)
 
 calculadora()
-
