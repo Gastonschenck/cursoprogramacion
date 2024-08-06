@@ -1,4 +1,4 @@
-from pynput import keyboard as kb
+from pynput import keyboard
 from os import system
 import keyboard
 import time
@@ -38,7 +38,9 @@ def leerDatos ():
         print(valor,end='\r')
         return(num)
     while True:
-        valortecla=keyboard.read_key()
+        with keyboard.Listener() as listener:
+            listener.join()
+        
         
         
         #espera un instante
