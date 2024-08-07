@@ -38,7 +38,7 @@ def leerDatos ():
         print(valor,end='\r')
         return(num)
     while True:
-        with keyboard.Listener() as listener:
+        with keyboard.() as listener:
             listener.join()
         
         
