@@ -4,6 +4,7 @@ import keyboard
 import time
 #def dibujar_calcularora():
 valor=""
+valortecla=""
 #def dibujar ():
     
 def leerDatos ():
@@ -38,23 +39,17 @@ def leerDatos ():
         print(valor,end='\r')
         return(num)
     while True:
-        with keyboard.() as listener:
-            listener.join()
-        
-        
-        
-        #espera un instante
-        time.sleep(0.1)
-        if valortecla=="0" or valortecla=="1" or valortecla=="2" or valortecla=="3" or valortecla=="4" or valortecla=="5" or valortecla=="6" or valortecla=="7" or valortecla=="8" or valortecla=="9":
-         num=cargarNumero(valortecla)
-        
-            
-        
-        
-        elif valortecla=="+" or valortecla=="-" or valortecla=="*" or valortecla=="/":
+        valortecla=keyboard.read_key()
+        if keyboard.is_pressed("0") or keyboard.is_pressed("1") or keyboard.is_pressed("2") or keyboard.is_pressed("3") or keyboard.is_pressed("4") or keyboard.is_pressed("5") or keyboard.is_pressed("6")  or keyboard.is_pressed("7") or keyboard.is_pressed("8") or keyboard.is_pressed("9"):
+            num=cargarNumero(valortecla)
+        elif keyboard.is_pressed("+") or keyboard.is_pressed("-") or keyboard.is_pressed("*") or keyboard.is_pressed("/"):
+            operacion
             operacion=valortecla
-            print (operacion)
+            #print("")
+            #print (operacion)
             #keyboard.press("backspace")
+            global valor
+            valor=""
             return (num, operacion)
             break
         elif valortecla=="q":
@@ -84,6 +79,9 @@ def calculadora ():
             break
         resultado=hacerCuenta(resultado,numero,op)
         #print (op, numero)
+        system("cls")
+        print("")
         print (resultado)
+        print (op)
 
 calculadora()
