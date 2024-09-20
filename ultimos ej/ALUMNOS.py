@@ -49,6 +49,8 @@ def main():
             else:              
                 promedioalumno= promedio(notas[indice])
                 print("El promedio de: ", nombres[indice], "es: ", promedioalumno)
+        elif opcion=='3':
+            print ('Chau!')
         else:
             print ("Opcion incorrecta")
 main ()
