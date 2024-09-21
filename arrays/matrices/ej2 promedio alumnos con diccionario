@@ -1,0 +1,34 @@
+def main():
+    opcion=0
+    matrizPaciente=[]
+    costoTotal=0.0
+            
+    while opcion!=4: 
+        print ("Opciones:")
+        print("1- Promedio alumno x materia")
+        
+        print("2- promedio mayor a 8")
+        print("3- agregar nuevas notas")
+        print("4-Salir")
+        print("")
+        opcion=int(input())
+        if opcion==1:
+            for i in diccAlumnos:#i=clave o nombre de alumno
+                print("")
+                print(i,": ")
+                
+                for j in diccAlumnos[i]:#j= son las materias
+                    promedio=sum(diccAlumnos[i][j])/len(diccAlumnos[i][j])
+                    print(j, ":", promedio)
+                    
+        elif opcion==2:
+            costo=[i[2] for i in matrizPaciente]#hace lista con los precios de tratamiento
+            costototal= sum (costo)
+            print (costototal)
+        elif opcion==3:
+            buscarPaciente(matrizPaciente)
+            
+diccAlumnos={"juan":{"matematicas":[1,5,7,4], "lengua":[5,7,7]}, 
+            "maria":{"matematica":[8,9], "fisica":[9,9]},
+            "pedro":{"ingles":[7,5,7], "arte":[10,10,10]}}
+main()
